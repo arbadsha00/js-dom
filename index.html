@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey</title>
+    <!-- daisyui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/374ce514ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container mx-auto text-center py-6">
+      <button
+        class="btn  rounded-full text-xl shadow-xl mx-auto mood-btn"
+      >
+        Change Mood
+      </button>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./dom.js"></script>
+  </body>
+</html>
