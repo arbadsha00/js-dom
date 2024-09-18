@@ -31,13 +31,40 @@
   </head>
   <body>
     <header class="container mx-auto text-center py-6">
-      <button
-        class="btn  rounded-full text-xl shadow-xl mx-auto mood-btn"
-      >
+      <button class="btn rounded-full text-xl shadow-xl mx-auto mood-btn">
         Change Mood
       </button>
     </header>
-    <main></main>
+    <main class="container mx-auto text-center">
+      <div class="space-x-2">
+        <input
+          type="text"
+          placeholder="Description"
+          id="text-area"
+          class="input input-bordered w-full max-w-xs"
+        />
+        <button id="add-button" class="btn btn-primary font-bold">Add</button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="list-container">
+            <!-- row 1 -->
+          </tbody>
+        </table>
+      </div>
+      <div class="flex justify-end">
+        <button class="btn btn-neutral">Clear</button>
+      </div>
+    </main>
     <footer></footer>
     <script src="./dom.js"></script>
   </body>
